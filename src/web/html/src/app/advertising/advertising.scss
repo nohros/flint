@@ -1,0 +1,51 @@
+.advertising {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  max-height: 950px;
+  background: transparent url("http://l.yimg.com/g/images/sohp_flower.jpg") no-repeat 30% 25%;
+  color:#fff;
+
+  a,
+  h1, h2, h3, h4, h5, h6,
+  .link {
+    color: #fff;
+  }
+
+  .topbar {
+    padding: rem-calc(5);
+    height: rem-calc(40);
+  }
+
+  .spec {
+    @include grid-column($columns:12);
+    margin: rem-calc(96) 0;
+    width: rem-calc(600);
+
+    h1 {
+      font-size: rem-calc(86);
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+
+  .social {
+    @include grid-column($columns:12);
+    text-align: center;
+
+    button, .button {
+      margin-right: rem-calc(10);
+      font-size: rem-calc(20);
+      font-weight: 500;
+    }
+
+    i {
+      margin-left: rem-calc(5);
+    }
+  }
+
+  p {
+    margin-bottom: rem-calc(27);
+  }
+}

@@ -1,0 +1,39 @@
+$facebook-color: #4568b2;
+$google-color : #dd4b39;
+
+.subtext {
+  font-size: rem-calc(22);
+  line-height: 1.4em;
+  font-weight: 200;
+}
+
+.link {
+  @include radius(3px);
+  padding: rem-calc(5) rem-calc(10) rem-calc(4);
+  &:hover {
+    background-color:rgba(0,0,0,0.3);
+  }
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button, .button {
+  @include radius(3px);
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15),0 1px 0 rgba(255,255,255,0.15) inset;
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15),0 1px 0 rgba(255,255,255,0.15) inset;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.15),0 1px 0 rgba(255,255,255,0.15) inset;
+
+  &.facebook {
+    background: $facebook-color;
+    &:hover {
+      background-color: darken($facebook-color, 5%);
+    }
+  }
+
+  &.google {
+    background: $google-color;
+    &:hover {
+      background-color: darken($google-color, 5%);
+    }
+  }
+}
